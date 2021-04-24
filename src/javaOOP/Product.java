@@ -12,6 +12,7 @@ public class Product {
 
 	// constructor overloading
 	public Product(int id, String productName, String detail, int unitPrice, int unitsInStock) {
+		this();
 		this.id = id;
 		this.productName = productName;
 		this.detail = detail;

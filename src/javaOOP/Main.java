@@ -5,6 +5,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		
+		
 		Product product1 = new Product(1, "Asus", "Asus Gaming v31", 15000, 10);
 
 		Product product2 = new Product(2,"Hp", "HP Gaming v2", 12000,3);
@@ -14,6 +16,8 @@ public class Main {
 		Product product4 = new Product();
 
 		Product[] products = { product1, product2, product3 };
+		
+		
 
 		for (Product product : products) {
 			System.out.println(product.productName);
@@ -34,7 +38,15 @@ public class Main {
 
 		for (Category category : categories) {
 			System.out.println(category.name);
+			System.out.println("-------------");
 		}
+		
+		
+		ProductManager productManager = new ProductManager();
+		
+		productManager.addToCart(product1);
+		productManager.addToCart(product2);
+		productManager.addToCart(product3);
 
 	}
 
